@@ -2,7 +2,6 @@ package tests;
 
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -12,7 +11,6 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Feature("Main page content")
-@Tag("web")
 public class MainPageTests extends TestBase {
 
     @Test
@@ -20,8 +18,8 @@ public class MainPageTests extends TestBase {
     void titlePageTest() {
         step("Open main page", () ->
                 open(""));
-        step("Check that Serrala Wins TMI Award is shown", () ->
-                $(".slick-active .huge-title").shouldHave(text("Serrala Wins TMI Award")));
+        step("Uncovering Optimization Options with AR Automation", () ->
+                $(".slick-active .huge-title").shouldHave(text("Uncovering Optimization Options with AR Automation")));
     }
 
     @Test
@@ -50,7 +48,7 @@ public class MainPageTests extends TestBase {
                 $(".de").click());
 
         step("Check that language is changed", () ->
-                $(".slick-active .huge-title").shouldHave(text("Serrala bezieht SkyCampus")));
+                $(".slick-active .huge-title").shouldHave(text("Debitoren optimal managen – Potenziale entdecken und nutzen")));
     }
 
     @Test

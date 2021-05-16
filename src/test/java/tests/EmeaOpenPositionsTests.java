@@ -2,7 +2,6 @@ package tests;
 
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -15,7 +14,6 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @Feature("EMEA Positions page content")
-@Tag("web")
 public class EmeaOpenPositionsTests extends TestBase {
 
     @Test
