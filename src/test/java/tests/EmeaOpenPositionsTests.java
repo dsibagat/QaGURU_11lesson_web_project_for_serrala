@@ -19,7 +19,7 @@ public class EmeaOpenPositionsTests extends TestBase {
 
 
     @Test
-    @JiraIssue("TESTS-13")
+    @JiraIssue("TESTS-15")
     @DisplayName("Page should be opened with direct link")
     void shouldBeOpenedWithDirectLinkTest() {
         step("Open EMEA Positions page", () ->
@@ -31,7 +31,7 @@ public class EmeaOpenPositionsTests extends TestBase {
 
 
     @Test
-    @JiraIssue("TESTS-13")
+    @JiraIssue("TESTS-15")
     @DisplayName("Console log should not have any errors")
     void consoleLogShouldNotHaveErrors() {
         step("Open EMEA Positions page", () ->
@@ -45,7 +45,7 @@ public class EmeaOpenPositionsTests extends TestBase {
 
 
     @Test
-    @JiraIssue("TESTS-13")
+    @JiraIssue("TESTS-15")
     @DisplayName("Search \"automation\" positions")
     void searchAutomationPosition() {
         step("Open EMEA Positions page", () ->
@@ -62,7 +62,7 @@ public class EmeaOpenPositionsTests extends TestBase {
 
 
     @Test
-    @JiraIssue("TESTS-13")
+    @JiraIssue("TESTS-15")
     @DisplayName("Page should be opened from Main page")
     void shouldBeOpenedFromMainPageTest() {
         step("Open main page", () ->
