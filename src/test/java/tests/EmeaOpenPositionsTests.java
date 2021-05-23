@@ -14,11 +14,10 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@JiraIssue("TESTS-13")
 @Feature("EMEA Positions page content")
 public class EmeaOpenPositionsTests extends TestBase {
 
-
+    @JiraIssue("TESTS-13")
     @Test
     @DisplayName("Page should be opened from Main page")
     void shouldBeOpenedFromMainPageTest() {
@@ -32,6 +31,7 @@ public class EmeaOpenPositionsTests extends TestBase {
         });
     }
 
+    @JiraIssue("TESTS-13")
     @Test
     @DisplayName("Page should be opened with direct link")
     void shouldBeOpenedWithDirectLinkTest() {
@@ -42,6 +42,7 @@ public class EmeaOpenPositionsTests extends TestBase {
                 $(".page-title").shouldHave(text("EMEA Open Positions")));
     }
 
+    @JiraIssue("TESTS-13")
     @Test
     @DisplayName("Console log should not have any errors")
     void consoleLogShouldNotHaveErrors() {
@@ -54,6 +55,7 @@ public class EmeaOpenPositionsTests extends TestBase {
         });
     }
 
+    @JiraIssue("TESTS-13")
     @Test
     @DisplayName("Search \"automation\" positions")
     void searchAutomationPosition() {
