@@ -17,22 +17,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @Feature("EMEA Positions page content")
 public class EmeaOpenPositionsTests extends TestBase {
 
-    @JiraIssue("TESTS-13")
-    @Test
-    @DisplayName("Page should be opened from Main page")
-    void shouldBeOpenedFromMainPageTest() {
-        step("Open main page", () ->
-                open(""));
 
-        step("Open EMEA Positions page", () -> {
-            $(".menu-icon-132").hover();
-            $(".open").$(byText("Open Positions")).click();
-            $("#paragrah--item--12592").click();
-        });
-    }
-
-    @JiraIssue("TESTS-13")
     @Test
+    @JiraIssue("TESTS-13")
     @DisplayName("Page should be opened with direct link")
     void shouldBeOpenedWithDirectLinkTest() {
         step("Open EMEA Positions page", () ->
@@ -42,8 +29,9 @@ public class EmeaOpenPositionsTests extends TestBase {
                 $(".page-title").shouldHave(text("EMEA Open Positions")));
     }
 
-    @JiraIssue("TESTS-13")
+
     @Test
+    @JiraIssue("TESTS-13")
     @DisplayName("Console log should not have any errors")
     void consoleLogShouldNotHaveErrors() {
         step("Open EMEA Positions page", () ->
@@ -55,8 +43,9 @@ public class EmeaOpenPositionsTests extends TestBase {
         });
     }
 
-    @JiraIssue("TESTS-13")
+
     @Test
+    @JiraIssue("TESTS-13")
     @DisplayName("Search \"automation\" positions")
     void searchAutomationPosition() {
         step("Open EMEA Positions page", () ->
@@ -69,5 +58,20 @@ public class EmeaOpenPositionsTests extends TestBase {
 
         step("Check that jobs contains \"automation\" word is shown", () ->
                 $("#jobList").shouldHave(text("Automation")));
+    }
+
+
+    @Test
+    @JiraIssue("TESTS-13")
+    @DisplayName("Page should be opened from Main page")
+    void shouldBeOpenedFromMainPageTest() {
+        step("Open main page", () ->
+                open(""));
+
+        step("Open EMEA Positions page", () -> {
+            $(".menu-icon-132").hover();
+            $(".open").$(byText("Open Positions")).click();
+            $("#paragrah--item--12592").click();
+        });
     }
 }
