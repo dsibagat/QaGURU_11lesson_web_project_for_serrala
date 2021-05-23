@@ -1,5 +1,6 @@
 package tests;
 
+import allureAnnotations.JiraIssue;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,8 +14,10 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@JiraIssue("TESTS-13")
 @Feature("EMEA Positions page content")
 public class EmeaOpenPositionsTests extends TestBase {
+
 
     @Test
     @DisplayName("Page should be opened from Main page")
