@@ -1,5 +1,6 @@
 package tests;
 
+import allureAnnotations.JiraIssue;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +10,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
-
+@JiraIssue("QC3-40")
 @Feature("Main page content")
 public class MainPageTests extends TestBase {
 
